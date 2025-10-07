@@ -1,5 +1,5 @@
 <x-layout>
-    <x-slot:title>Productos | KALM</x-slot:title>
+    <x-slot:title>Productos | Kälm</x-slot:title>
 
     <h1 class="mb-4">Productos</h1>
 

@@ -1,61 +1,41 @@
 <x-layout>
-    <x-slot:title>Inicio | KALM</x-slot:title>
+    <x-slot:title>Inicio | Kälm</x-slot:title>
 
-    <!-- Carousel principal con imágenes clicables y alto máximo -->
-    <div id="mainCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <a href="{{ route('products.index') }}">
-                    <div class="overflow-hidden" style="max-height: 250px;">
-                        <img src="https://i.pinimg.com/736x/82/8c/3a/828c3aabf4a3b79f6b003626fd98b870.jpg"
-                            class="d-block w-100" style="object-fit: cover; height: 100%;" alt="Banner Skincare">
-                    </div>
-                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
-                        <h1><i class="fa-solid fa-sparkles"></i> Bienvenido a KALM</h1>
-                        <p>Asesoramiento personalizado de skincare y haircare para hombres y mujeres.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="carousel-item">
-                <a href="{{ route('posts.index') }}">
-                    <div class="overflow-hidden" style="max-height: 250px;">
-                        <img src="https://i.pinimg.com/1200x/52/40/cf/5240cff0fb3479c7adc3351a22acc765.jpg"
-                            class="d-block w-100" style="object-fit: cover; height: 100%;" alt="Banner Consejos">
-                    </div>
-                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
-                        <h2><i class="fa-solid fa-lightbulb"></i> Consejos Personalizados</h2>
-                        <p>Rutinas diarias para mantener tu piel y cabello saludables.</p>
-                    </div>
-                </a>
-            </div>
+    <header style="background-image: url('https://files.catbox.moe/43pskb.png'); background-size:cover; height:30vw;" class="mt-0 m-2 p-9 mb-5 rounded-4 text-light d-flex justify-content-between align-items-center">
+        <div style="width: 34vw;" class="ms-5">
+            <h1 style="color: #306067;" class="fw-bold text-5xl mb-3">Comprendé los secretos de tu piel y cabello con Kälm.</h1>
+            <a style="border-color: #37A0AF; background-color: #37A0AF;" class="fw-bold me-2 px-4 py-2 rounded-4 text-light w-20 text-center text-decoration-none" ">Ver más</a>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-            <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-            <span class="visually-hidden">Siguiente</span>
-        </button>
-    </div>
+    </header>
 
 
-    <!-- Botones para Test de Rutina -->
-    <div class="mb-4 d-flex align-items-center justify-content-between">
+<div class="container">
+    <div class="d-flex my-5">
+        <img class="img-fluid" src="https://files.catbox.moe/y072ew.png" alt="mockup kälm">
         <div>
-            <p class="lead fw-bold"><i class="fa-solid fa-vial"></i> Conoce tu rutina</p>
-            <a href="#" class="btn btn-info btn-lg mx-2"><i class="fa-solid fa-face-smile"></i> Test: Tipo de Piel</a>
-            <a href="#" class="btn btn-warning btn-lg mx-2"><i class="fa-solid fa-droplet"></i> Test: Tipo de
-                Cabello</a>
-        </div>
-        <div>
-            <a href="https://www.figma.com/design/8p4Gj78estjBeiSBqFYJV5/proto?node-id=71-795&t=cV8twNHaBXxlKCTj-1" target="_blank"
-                class="btn btn-success btn-lg d-flex align-items-center">
-                <i class="fa-brands fa-figma me-2"></i> Probar Prototipo
-            </a>
+            <h2>Descubrí tu próxima rutina de autocuidado</h2>
+            <p>Con la app de Kälm, vas a poder crear una rutina personalizada que se adapte a tus necesidades y tipo de piel.</p>
         </div>
     </div>
 
+        <!-- Botones para Test de Rutina -->
+    <div class="my-5">
+        <h2 class="text-center fw-bold mb-5">Conocé tu Rutina</h2>
+        <div style="color: #306067;" class="d-flex justify-content-center flex-wrap mb-5">
+            <div style="width: 17vw;" class="text-center shadow-sm rounded-5 p-5 me-5">
+                <img style="height: 9vw;" class="mb-5" class="mb-5" src="https://files.catbox.moe/ivevkn.png" alt="skincare">
+                <p class="fw-bold">Skincare</p>
+            </div>
+            <div style="width: 17vw;" class="text-center shadow-sm rounded-5 p-5 me-5">
+                <img style="height: 9vw;" class="mb-5" src="https://files.catbox.moe/c9ui5a.png" alt="haircare">
+                <p class="fw-bold">Haircare</p>
+            </div>
+            <div style="width: 17vw;" class="text-center shadow-sm rounded-5 p-5 me-5">
+                <img style="height: 9vw;" class="mb-5" src="https://files.catbox.moe/di4wo8.png" alt="prototipo">
+                <a style="color: #306067;" class="fw-bold d-inline-block text-decoration-none" href="https://www.figma.com/design/8p4Gj78estjBeiSBqFYJV5/proto?node-id=0-1&t=7gWD9YIaVhpseoar-1">Probá nuestro prototipo</a>
+            </div>
+        </div>
+    </div>
 
     <!-- Preguntas Frecuentes -->
     <h2 class="mb-3"><i class="fa-solid fa-question-circle"></i> Preguntas Frecuentes</h2>
@@ -63,13 +43,12 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                    ¿Cómo puedo mantener una rutina si soy hombre?
+                    ¿Cómo sabe la app qué tipo de piel tengo?
                 </button>
             </h2>
             <div id="faq1" class="accordion-collapse collapse">
                 <div class="accordion-body">
-                    Organiza tus productos y horarios, comienza con lo esencial: limpieza, hidratación y protección
-                    solar.
+                    Nuestra app analiza tus respuestas a un breve cuestionario dermatológico. Con esa información identifica tu tipo de piel y te recomienda rutinas y productos personalizados.
                 </div>
             </div>
         </div>
@@ -77,12 +56,12 @@
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#faq2">
-                    ¿Cuánto tiempo debo dedicar al cuidado del cabello?
+                    ¿Los productos recomendados son de marcas específicas?
                 </button>
             </h2>
             <div id="faq2" class="accordion-collapse collapse">
                 <div class="accordion-body">
-                    Con 10-15 minutos diarios puedes mantener un cabello saludable si usas los productos adecuados.
+                    No. La app es totalmente imparcial: te sugiere productos basados en tus necesidades y tipo de piel, sin vínculos comerciales con marcas. Aun así, podés filtrar por tus marcas favoritas si querés.
                 </div>
             </div>
         </div>
@@ -90,19 +69,19 @@
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#faq3">
-                    ¿Puedo combinar skincare y haircare en la misma rutina?
+                    ¿Necesito pagar para usar la app?
                 </button>
             </h2>
             <div id="faq3" class="accordion-collapse collapse">
                 <div class="accordion-body">
-                    Sí, solo asegúrate de separar productos para piel y cabello y aplicarlos en el orden correcto.
+                    Podés usar la versión básica de forma gratuita. Si querés acceder a funciones premium —como el seguimiento del progreso de tu piel, recordatorios inteligentes y rutinas avanzadas— hay planes de suscripción mensual o anual.
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Influencers Destacados -->
-    <h2 class="mb-3"><i class="fa-brands fa-instagram"></i> Influencers Destacados</h2>
+    <h2 class="mb-3"><i class="fa-brands fa-instagram"></i> Nuestra comunidad</h2>
     <div class="row">
         @php
             $influencers = [
@@ -146,4 +125,5 @@
             </div>
         @endforeach
     </div>
+</div>
 </x-layout>
