@@ -38,7 +38,7 @@
     </div>
 
     <!-- Preguntas Frecuentes -->
-    <h2 class="mb-3"><i class="fa-solid fa-question-circle"></i> Preguntas Frecuentes</h2>
+    <h2 class="text-center fw-bold mb-5"><i class="fa-solid fa-question-circle"></i> Preguntas Frecuentes</h2>
     <div class="accordion mb-5" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
@@ -81,7 +81,7 @@
     </div>
 
     <!-- Influencers Destacados -->
-    <h2 class="mb-3"><i class="fa-brands fa-instagram"></i> Nuestra comunidad</h2>
+    <h2 class="text-center fw-bold mb-5"><i class="fa-brands fa-instagram"></i> Nuestra comunidad</h2>
     <div class="row">
         @php
             $influencers = [
