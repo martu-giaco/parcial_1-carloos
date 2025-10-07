@@ -12,25 +12,25 @@
 <div class="container">
     <div class="d-flex my-5">
         <img class="img-fluid" src="https://files.catbox.moe/y072ew.png" alt="mockup kälm">
-        <div>
+        <div class="d-flex flex-column justify-content-center ms-5">
             <h2>Descubrí tu próxima rutina de autocuidado</h2>
-            <p>Con la app de Kälm, vas a poder crear una rutina personalizada que se adapte a tus necesidades y tipo de piel.</p>
+            <p>Con la app de Kälm, diseñá una rutina de skincare que realmente se adapte a vos —a tu piel, a tu ritmo y a tu día a día. Nuestra tecnología inteligente analiza tus necesidades, tipo de piel y hábitos para crear un plan personalizado que evoluciona con vos.</p>
         </div>
     </div>
 
         <!-- Botones para Test de Rutina -->
     <div class="my-5">
-        <h2 class="text-center fw-bold mb-5">Conocé tu Rutina</h2>
+        <h2 class="text-center mb-5">Conocé tu Rutina</h2>
         <div style="color: #306067;" class="d-flex justify-content-center flex-wrap mb-5">
-            <div style="width: 17vw;" class="text-center shadow-sm rounded-5 p-5 me-5">
-                <img style="height: 9vw;" class="mb-5" class="mb-5" src="https://files.catbox.moe/ivevkn.png" alt="skincare">
+            <div style="width: 17vw; height: 25vw;" class="text-center shadow-sm rounded-5 p-5 me-5 d-flex flex-column justify-content-center align-items-center">
+                <img style="height: 9vw;" class="mb-5" src="https://files.catbox.moe/ivevkn.png" alt="skincare">
                 <p class="fw-bold">Skincare</p>
             </div>
-            <div style="width: 17vw;" class="text-center shadow-sm rounded-5 p-5 me-5">
+            <div style="width: 17vw; height: 25vw;" class="text-center shadow-sm rounded-5 p-5 me-5 d-flex flex-column justify-content-center align-items-center">
                 <img style="height: 9vw;" class="mb-5" src="https://files.catbox.moe/c9ui5a.png" alt="haircare">
                 <p class="fw-bold">Haircare</p>
             </div>
-            <div style="width: 17vw;" class="text-center shadow-sm rounded-5 p-5 me-5">
+            <div style="width: 17vw; height: 25vw;" class="text-center shadow-sm rounded-5 p-5 me-5 d-flex flex-column justify-content-center align-items-center">
                 <img style="height: 9vw;" class="mb-5" src="https://files.catbox.moe/di4wo8.png" alt="prototipo">
                 <a style="color: #306067;" class="fw-bold d-inline-block text-decoration-none" href="https://www.figma.com/design/8p4Gj78estjBeiSBqFYJV5/proto?node-id=0-1&t=7gWD9YIaVhpseoar-1">Probá nuestro prototipo</a>
             </div>
@@ -38,7 +38,7 @@
     </div>
 
     <!-- Preguntas Frecuentes -->
-    <h2 class="text-center fw-bold mb-5">Preguntas Frecuentes</h2>
+    <h2 class="text-center mb-5">Preguntas Frecuentes</h2>
     <div class="accordion mb-5" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
@@ -81,7 +81,7 @@
     </div>
 
     <!-- Influencers Destacados -->
-    <h2 class="text-center fw-bold mb-5">Nuestra comunidad</h2>
+    <h2 class="text-center mb-5">Nuestra comunidad</h2>
     <div class="row">
         @php
             $influencers = [
