@@ -12,6 +12,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
 </head>
 
 <body class="d-flex flex-column min-vh-100 bg-light">
@@ -27,6 +31,7 @@
             <div class="collapse navbar-collapse ms-auto justify-content-end" id="navbarNav">
                 <ul class="navbar-nav fw-semibold d-flex align-items-center">
                     <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">Quiénes somos</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('posts.index') }}">Posts</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('products.index') }}">Productos</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('reviews.index') }}">Reseñas</a></li>
