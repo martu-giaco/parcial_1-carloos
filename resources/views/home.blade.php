@@ -3,7 +3,7 @@
 
     <header style="background-image: url('https://files.catbox.moe/43pskb.png'); background-size:cover; height:30vw;" class="mt-0 m-2 p-9 mb-5 rounded-4 text-light d-flex justify-content-between align-items-center">
         <div style="width: 34vw;" class="ms-5">
-            <h1 style="color: #306067;" class="fw-bold text-5xl mb-3">Comprendé los secretos de tu piel y cabello con Kälm.</h1>
+            <h1 style="color: #306067;" class="fw-bold text-5xl mb-3">Descubrí los secretos de tu piel y cabello con Kälm.</h1>
             <a style="border-color: #37A0AF; background-color: #37A0AF;" class="fw-bold me-2 px-4 py-2 rounded-4 text-light w-20 text-center text-decoration-none" ">Ver más</a>
         </div>
     </header>
@@ -12,33 +12,84 @@
 <div class="container">
     <div class="d-flex my-5">
         <img class="img-fluid" src="https://files.catbox.moe/y072ew.png" alt="mockup kälm">
-        <div class="d-flex flex-column justify-content-center ms-5">
-            <h2>Descubrí tu próxima rutina de autocuidado</h2>
+        <div class="d-flex flex-column justify-content-center ms-5 pe-5">
+            <h2 style="color: #306067;">Tu próxima rutina de autocuidado</h2>
             <p>Con la app de Kälm, diseñá una rutina de skincare que realmente se adapte a vos —a tu piel, a tu ritmo y a tu día a día. Nuestra tecnología inteligente analiza tus necesidades, tipo de piel y hábitos para crear un plan personalizado que evoluciona con vos.</p>
         </div>
     </div>
 
         <!-- Botones para Test de Rutina -->
     <div class="my-5">
-        <h2 class="text-center mb-5">Conocé tu Rutina</h2>
-        <div style="color: #306067;" class="d-flex justify-content-center flex-wrap mb-5">
-            <div style="width: 17vw; height: 25vw;" class="text-center shadow-sm rounded-5 p-5 me-5 d-flex flex-column justify-content-center align-items-center">
-                <img style="height: 9vw;" class="mb-5" src="https://files.catbox.moe/ivevkn.png" alt="skincare">
+        <h2 style="color: #306067;" class="text-center">Tu rutina ideal</h2>
+        <p class="mb-5 text-center">Realizá nuestros tests para descubrir la rutina de autocuidado que mejor se adapta a vos.</p>
+        <div style="color: white;" class="d-flex justify-content-center flex-wrap mb-5">
+            <div style="width: 17vw; height: 25vw; background-image: url('https://files.catbox.moe/8ejton.jpg');" class="text-center shadow-sm rounded-5 p-5 me-5 d-flex flex-column justify-content-center align-items-center">
+                <img style="height: 9vw;" class="mb-5" src="https://files.catbox.moe/zsw18a.svg" alt="skincare">
                 <p class="fw-bold">Skincare</p>
             </div>
-            <div style="width: 17vw; height: 25vw;" class="text-center shadow-sm rounded-5 p-5 me-5 d-flex flex-column justify-content-center align-items-center">
-                <img style="height: 9vw;" class="mb-5" src="https://files.catbox.moe/c9ui5a.png" alt="haircare">
+            <div style="width: 17vw; height: 25vw; background-image: url('https://files.catbox.moe/7v635c.jpg');" class="text-center shadow-sm rounded-5 p-5 me-5 d-flex flex-column justify-content-center align-items-center">
+                <img style="height: 9vw;" class="mb-5" src="https://files.catbox.moe/0p4nkk.svg" alt="haircare">
                 <p class="fw-bold">Haircare</p>
             </div>
-            <div style="width: 17vw; height: 25vw;" class="text-center shadow-sm rounded-5 p-5 me-5 d-flex flex-column justify-content-center align-items-center">
-                <img style="height: 9vw;" class="mb-5" src="https://files.catbox.moe/di4wo8.png" alt="prototipo">
-                <a style="color: #306067;" class="fw-bold d-inline-block text-decoration-none" href="https://www.figma.com/design/8p4Gj78estjBeiSBqFYJV5/proto?node-id=0-1&t=7gWD9YIaVhpseoar-1">Probá nuestro prototipo</a>
+            <div style="width: 17vw; height: 25vw; background-image: url('https://files.catbox.moe/5spkpv.png');background-size: cover;" class="text-center shadow-sm rounded-5 p-5 me-5 d-flex flex-column justify-content-center align-items-center">
+                <img style="height: 9vw;" class="mb-5" src="https://files.catbox.moe/dhwxv5.svg" alt="prototipo">
+                <a style="color: white;" class="fw-bold d-inline-block text-decoration-none" href="https://www.figma.com/design/8p4Gj78estjBeiSBqFYJV5/proto?node-id=0-1&t=7gWD9YIaVhpseoar-1">Probá nuestro prototipo</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subscripciones -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Subscripciones</h2>
+        <div class="card shadow-lg border-0 rounded-4 overflow-hidden">
+            <div class="row g-0">
+                <!-- PLAN FREE -->
+                <div class="col-md-4 p-4 border-end d-flex flex-column">
+                    <h3 class="fw-semibold text-center">Kälm Free</h3>
+                    <p class="text-muted mb-2 text-center">Ideal para quienes recién están empezando a adentrarse en el mundo del haircare y el skincare.</p>
+                    <p style="color:#306067;" class="fs-3 fw-bold mb-4 text-center">Gratis</p>
+                    <ul class="text-secondary mb-4">
+                        <li>Diagnóstico básico del tipo de piel</li>
+                        <li>Recomendaciones diarias de rutina</li>
+                        <li>Registro de productos usados</li>
+                        <li>Consejos y artículos sobre skincare</li>
+                    </ul>
+                    <button style="background-color:#37A0AF;margin-top: 2.5vw;" class="btn text-white rounded-pill px-4 text-center">Empezar gratis</button>
+                </div>
+                <!-- PLAN PLUS -->
+                <div class="col-md-4 p-4 border-end bg-light d-flex flex-column">
+                    <h3 class="fw-semibold text-center">Kälm Plus</h3>
+                    <p class="text-muted mb-2 text-center">Ideal para quienes ya conocen su piel y buscan subir de nivel, Kälm Plus ofrece una experiencia aún más personalizada y sin anuncios. </p>
+                    <p style="color:#306067;" class="fs-3 fw-bold mb-4 text-center">ARS $7,000 / mes</p>
+                    <ul class="text-secondary mb-4">
+                        <li>Análisis avanzado con IA y escaneo facial</li>
+                        <li>Rutinas personalizadas según clima y hábitos</li>
+                        <li>Recordatorios inteligentes</li>
+                        <li>Estadísticas del progreso con fotos</li>
+                        <li>Acceso a comunidad y foros privados</li>
+                    </ul>
+                    <button style="background-color:#37A0AF;" class="btn text-white rounded-pill px-4 text-center">Ver más</button>
+                </div>
+                <!-- PLAN PRO -->
+                <div class="col-md-4 p-4 d-flex flex-column" style="background-color: #CCE2E5;">
+                    <h3 class="fw-semibold text-center">Kälm Pro</h3>
+                    <p class="text-muted mb-2 text-center">Ideal para expertos en skincare y haircare, tanto profesionales como entusiastas del autocuidado.</p>
+                    <p style="color:#306067;" class="fs-3 fw-bold mb-4 text-center">ARS $20,000 / mes</p>
+                    <ul class="text-secondary mb-4">
+                        <li>Asesoramiento con expertos certificados</li>
+                        <li>Recomendaciones según tu presupuesto</li>
+                        <li>Rutinas adaptadas a tratamientos dermatológicos</li>
+                        <li>Reportes mensuales con evolución</li>
+                        <li>Acceso anticipado a nuevas funciones</li>
+                    </ul>
+                    <button style="background-color:#37A0AF;" class="btn text-white rounded-pill px-4 text-center">Ver más</button>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Preguntas Frecuentes -->
-    <h2 class="text-center mb-5">Preguntas Frecuentes</h2>
+    <h2 style="color: #306067;" class="text-center my-5">Preguntas Frecuentes</h2>
     <div class="accordion mb-5" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
@@ -81,7 +132,7 @@
     </div>
 
     <!-- Influencers Destacados -->
-    <h2 class="text-center mb-5">Nuestra comunidad</h2>
+    <h2 style="color: #306067;" class="text-center my-5">Nuestra comunidad</h2>
     <div class="row">
         @php
             $influencers = [
