@@ -10,26 +10,21 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::all();
-        return view('posts.index', ['posts' => $posts]);
+        return view('posts.index', ['posts' => $posts]); // fix: use view() instead of show()
     }
 
     // Vista de un post
-    public function view($id)
+    public function show($id)
     {
-        // Antes estaba probablemente así:
-        // $post = Post::where('post_id', $id)->first();
-
-        // Cambiar a:
         $post = Post::findOrFail($id); // Usa la clave primaria 'id'
-
         return view('posts.view', compact('post'));
+ // fix: use view() instead of show()
     }
-
 
     // Formulario para crear post
     public function create()
     {
-        return view('posts.create');
+        return view('posts.create'); // fix: use view() instead of show()
     }
 
     // Guardar post
@@ -47,12 +42,11 @@ class PostController extends Controller
         return redirect()->route('posts.index')->with('success', 'Post creado con éxito!');
     }
 
-
     // Formulario para eliminar
     public function delete(int $id)
     {
         $post = Post::findOrFail($id);
-        return view('posts.delete', ['post' => $post]);
+        return view('posts.delete', ['post' => $post]); // fix: use view() instead of show()
     }
 
     // Eliminar post

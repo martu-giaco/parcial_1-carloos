@@ -11,7 +11,7 @@ use App\Http\Controllers\ReviewController;
 Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/about', [AboutController::class, 'about'])->name('about');
 
-// Productos con resource
+// Planes con resource
 Route::resource('products', ProductController::class)->except(['show']);
 // Si quieres mantener 'view' en vez de 'show', puedes definirlo aparte:
 Route::get('/products/{product}', [ProductController::class, 'view'])->name('products.view');
@@ -20,9 +20,10 @@ Route::get('/products/{product}', [ProductController::class, 'view'])->name('pro
 Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
 Route::get('/posts/create', [PostController::class, 'create'])->name('posts.create');
 Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
-Route::get('/posts/{id}', [PostController::class, 'view'])->name('posts.view')->whereNumber('id');
-Route::get('/posts/{id}/delete', [PostController::class, 'delete'])->name('posts.delete');
-Route::delete('/posts/{id}', [PostController::class, 'destroy'])->name('posts.destroy');
+Route::get('/posts/{id}', [PostController::class, 'show'])->name('posts.show')->whereNumber('id');
+Route::get('/posts/{id}/edit', [PostController::class, 'edit'])->name('posts.edit')->whereNumber('id');
+Route::put('/posts/{id}', [PostController::class, 'update'])->name('posts.update')->whereNumber('id');
+Route::delete('/posts/{id}', [PostController::class, 'destroy'])->name('posts.destroy')->whereNumber('id');
 
 // Reviews
 Route::get('/reviews', [ReviewController::class, 'index'])->name('reviews.index');

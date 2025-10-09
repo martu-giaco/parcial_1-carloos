@@ -11,7 +11,7 @@ class ReviewController extends Controller
     // Listar todas las reviews
     public function index()
     {
-        $reviews = Review::with('product')->latest()->get(); // Trae reviews con el producto relacionado
+        $reviews = Review::with('product')->latest()->get(); // Trae reviews con el Plan relacionado
         return view('reviews.index', compact('reviews'));
     }
 
@@ -27,14 +27,12 @@ class ReviewController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'product_id' => 'required|exists:products,id',
             'author' => 'required|string|max:100',
             'rating' => 'required|integer|min:1|max:5',
             'comment' => 'required|string',
         ]);
 
         Review::create([
-            'product_id' => $request->product_id,
             'author' => $request->author,
             'rating' => $request->rating,
             'comment' => $request->comment,

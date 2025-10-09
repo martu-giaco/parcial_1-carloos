@@ -7,20 +7,20 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    // Mostrar todos los productos
+    // Mostrar todos los Planes
     public function index()
     {
         $products = Product::all();
         return view('products.index', compact('products'));
     }
 
-    // Formulario para crear producto
+    // Formulario para crear Plan
     public function create()
     {
         return view('products.create');
     }
 
-    // Guardar nuevo producto
+    // Guardar nuevo Plan
     public function store(Request $request)
     {
         $request->validate([
@@ -31,10 +31,10 @@ class ProductController extends Controller
 
         Product::create($request->all());
 
-        return redirect()->route('products.index')->with('feedback.message', 'Producto creado correctamente.');
+        return redirect()->route('products.index')->with('feedback.message', 'Plan creado correctamente.');
     }
 
-    // Ver producto individual
+    // Ver Plan individual
     public function view(Product $product)
     {
         return view('products.view', compact('product'));
@@ -42,7 +42,7 @@ class ProductController extends Controller
 
 
 
-    // Actualizar producto
+    // Actualizar Plan
     public function update(Request $request, Product $product)
     {
         $request->validate([
@@ -53,13 +53,13 @@ class ProductController extends Controller
 
         $product->update($request->all());
 
-        return redirect()->route('products.index')->with('feedback.message', 'Producto actualizado correctamente.');
+        return redirect()->route('products.index')->with('feedback.message', 'Plan actualizado correctamente.');
     }
 
-    // Eliminar producto
+    // Eliminar Plan
     public function destroy(Product $product)
     {
         $product->delete();
-        return redirect()->route('products.index')->with('feedback.message', 'Producto eliminado correctamente.');
+        return redirect()->route('products.index')->with('feedback.message', 'Plan eliminado correctamente.');
     }
 }

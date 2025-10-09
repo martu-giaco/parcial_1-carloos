@@ -3,7 +3,7 @@
 ?>
 
 <x-layout>
-    <x-slot:title>Eliminar Producto {{ $product->name }}</x-slot:title>
+    <x-slot:title>Eliminar Plan {{ $product->name }}</x-slot:title>
 
     <h1 class="mb-3">Confirmación para eliminar {{ $product->name }}</h1>
 

@@ -2,7 +2,7 @@
 
 <x-layout>
     <div class="container my-5">
-        <h1 class="mb-4">Crear Nueva Reseña</h1>
+        <h1 class="fw-bold display-5 mb-3">Crear nueva reseña</h1>
 
         @if($errors->any())
             <div class="alert alert-danger">
@@ -16,17 +16,7 @@
 
         <form action="{{ route('reviews.store') }}" method="POST">
             @csrf
-            <div class="mb-3">
-                <label for="product_id" class="form-label">Producto</label>
-                <select name="product_id" id="product_id" class="form-select" required>
-                    <option value="">Selecciona un producto</option>
-                    @foreach($products as $product)
-                        <option value="{{ $product->id }}" {{ old('product_id') == $product->id ? 'selected' : '' }}>
-                            {{ $product->name }}
-                        </option>
-                    @endforeach
-                </select>
-            </div>
+
 
             <div class="mb-3">
                 <label for="author" class="form-label">Autor</label>
@@ -34,7 +24,7 @@
             </div>
 
             <div class="mb-3">
-                <label for="rating" class="form-label">Rating</label>
+                <label for="rating" class="form-label">Calificar (1 - 5)</label>
                 <input type="number" name="rating" id="rating" class="form-control" min="1" max="5" value="{{ old('rating') }}" required>
             </div>
 
@@ -43,8 +33,8 @@
                 <textarea name="comment" id="comment" class="form-control" rows="4" required>{{ old('comment') }}</textarea>
             </div>
 
-            <button type="submit" class="btn btn-success">Guardar Reseña</button>
-            <a href="{{ route('reviews.index') }}" class="btn btn-secondary">Cancelar</a>
+            <button type="submit" class="fw-bold btn text-light rounded-4  px-3 px-sm-4 px-md-3 py-1 py-sm-2 py-md-2 fs-6 fs-sm-5 fs-md-4"
+                style="background-color: #29995BFF; border-color: #37AF55FF;"><i class="fa-solid fa-plus mx-2"></i>Crear Reseña</button>
         </form>
     </div>
 </x-layout>
